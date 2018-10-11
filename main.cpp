@@ -74,7 +74,7 @@ void load_config()
 			std::string user = attributes.get<std::string>("user");
 			std::string passwd = attributes.get<std::string>("pass");
 			int threads = attributes.get<int>("threads");
-			auto pool = new CDbPool(host, user, passwd, name, port, "utf8");
+			auto pool = new CDbPool(host, user, passwd, name, port, threads, "utf8");
 
 			g_service->dbpools[name] = pool;
 		}
