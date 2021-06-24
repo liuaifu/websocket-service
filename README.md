@@ -26,5 +26,6 @@ Linux
 
 Windows
 
-	> cmake -G "Visual Studio 15" -DBOOST_INCLUDEDIR=x:\boost_1_66_0\include -DBOOST_LIBRARYDIR=x:\boost_1_66_0\lib -DDBPOOL_INCLUDEDIR=x:\libdbpool\include -DMYSQL_INCLUDEDIR=x:\MySQL-5.7\include -DMYSQL_LIBDIR=x:\MySQL-5.7\lib ..
+	> cmake -G "Visual Studio 15 WIN32" -DBOOST_INCLUDEDIR=x:\boost_1_66_0\include -DBOOST_LIBRARYDIR=x:\boost_1_66_0\lib -DDBPOOL_INCLUDEDIR=x:\libdbpool\include -DMYSQL_INCLUDEDIR=x:\MySQL-5.7\include -DMYSQL_LIBDIR=x:\MySQL-5.7\lib ..
+	> cmake -G "Visual Studio 16 2019" -AWIN32 -DBOOST_INCLUDEDIR=x:\boost_1_66_0\include -DBOOST_LIBRARYDIR=x:\boost_1_66_0\lib -DDBPOOL_INCLUDEDIR=x:\libdbpool\include -DMYSQL_INCLUDEDIR=x:\MySQL-5.7\include -DMYSQL_LIBDIR=x:\MySQL-5.7\lib ..
 然后在VS中打开工程文件并编译
